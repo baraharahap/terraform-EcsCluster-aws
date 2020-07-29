@@ -1,0 +1,19 @@
+ 1. ecs name: staging-frontend-bara
+vpc: jasmine-production
+ip: public
+ELB: staging-kong-gateway (existing)
+SG Cluster:ecs-staging-frontend-bara
+type : t3.nano
+SG ELB:staging-MA-kong-elb
+Target group: staging-frontend-bara
+service: staging-frontend-bara
+task: staging-frontend-bara
+repo: staging-frontend-bara
+container name in task: staging-frontend-bara
+path: /
+port: 80
+jenkins: staging-frontend-bara
+log cloudwatch: ecs-staging-frontend-bara
+
+
+tg yang lama: staging-bara

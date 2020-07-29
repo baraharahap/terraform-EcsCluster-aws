@@ -1,0 +1,30 @@
+[
+    {
+        "name": "staging-frontend-bara",
+       "image": "701719391103.dkr.ecr.ap-southeast-1.amazonaws.com/staging-frontend-bara:latest",
+        "cpu": 300,
+        "memory": 300,
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "ecs-staging-frontend-bara",
+            "awslogs-region": "ap-southeast-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        },
+        "links": [],
+        "portMappings": [
+            { 
+                "hostPort": 80,
+                "containerPort": 80,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [],
+        "command": [],
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": []
+    }
+  ]
