@@ -5,7 +5,7 @@
 resource "aws_ecs_task_definition" "task_definition" {
   container_definitions    = "${data.template_file.task_definition_json.rendered}"                                         # task defination json file location
   #execution_role_arn       = "none" #CHANGE THIS                                                                      # role for executing task
-  family                   = "staging-frontend-bara"                                                                      # task name
+  family                   = "staging-************"                                                                      # task name FOR TASK DEFINITION
   network_mode             = "awsvpc"                                                                                      # network mode awsvpc, brigde
   memory                   = "300"
   cpu                      = "300"

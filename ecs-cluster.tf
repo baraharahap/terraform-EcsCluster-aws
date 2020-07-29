@@ -3,9 +3,9 @@
 #########################################################
 
 resource "aws_ecs_cluster" "cluster" {
-  name = "staging-frontend-bara"
+  name = "staging-*******" #CHANGE WITH YOUR CLUSTER NAME
   tags = {
-   name = "staging-frontend-bara"
+   name = "staging-*******" #CHANGE WITH YOUR CLUSTER NAME
    }
    
   }

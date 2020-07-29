@@ -1,13 +1,13 @@
 [
     {
-        "name": "staging-frontend-bara",
-       "image": "701719391103.dkr.ecr.ap-southeast-1.amazonaws.com/staging-frontend-bara:latest",
+        "name": "staging-*********", 
+       "image": "701719.dkr.ecr.a******************/staging-******:latest",
         "cpu": 300,
         "memory": 300,
         "logConfiguration": {
           "logDriver": "awslogs",
           "options": {
-            "awslogs-group": "ecs-staging-frontend-bara",
+            "awslogs-group": "ecs-staging-**************",
             "awslogs-region": "ap-southeast-1",
             "awslogs-stream-prefix": "ecs"
           }
@@ -28,3 +28,7 @@
         "volumesFrom": []
     }
   ]
+
+  # NAME IS FOR NAME CONTAINER
+  # IMAGE IS YOUR IMAGE DOCKER REGISTRY IN ECR
+  # AWS LOGS GROUP FOR LOGING YOUR CLUSTER

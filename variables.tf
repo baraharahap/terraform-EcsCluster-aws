@@ -28,17 +28,17 @@
 
 # variable "test_network_cidr" {
 #   description = "IP addressing for Test Network"
-#   default   = "subnet-88e8c6ec"
+#   default   = "subnet-*****"
 # }
 
 variable "test_public_01_cidr" {
   description = "Public 0.0 CIDR for externally accessible subnet"
-  default   = "subnet-1c97c46a"
+  default   = "subnet-**********" #CHANGE WITH YOUR PUBLIC SUBNET ID 
 }
 
 variable "test_public_02_cidr" {
   description = "Public 0.0 CIDR for externally accessible subnet"
-  default   = "subnet-88e8c6ec"
+  default   = "subnet-**********" #CHANGE WITH YOUR PUBLIC SUBNET ID
 }
 
 ########################### Autoscale Config ################################
